@@ -15,11 +15,9 @@ export class CelularService {
   getAllCelulares(): Observable<Celular[]> {
     return this.http.get<Celular[]>(this.apiUrl);
   }
-
   createCelular(celular: Celular): Observable<Celular> {
     return this.http.post<Celular>(this.apiUrl, celular);
   }
-
   editCelular(celular: Celular): Observable<Celular> {
     return this.http.put<Celular>(this.apiUrl, celular);
   }
